@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venture Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  
+</head>
+<body>
+    <section class="auth">
+        <div class="auth__logo">
+            <img src="img/logo.svg" class="img-responsive" alt="">
+        </div>
+        <form class="auth-form auth__form">
+            <h1 class="auth-form__title">Register startup</h1>
+            <div class="input-groupe auth-form__input-groupe">
+                <label class="input-groupe__label" for="name">Company name</label>
+                <!-- input-groupe__input--error класс ошибки для инпута-->
+                <input type="text" class="input-groupe__input" id="name" name="name">
+                <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+            </div>
+            <div class="input-groupe auth-form__input-groupe">
+                <label class="input-groupe__label" for="website">Company website</label>
+                <input type="text" class="input-groupe__input" id="website" name="website">
+                <p class="input-groupe__error"></p>
+            </div>
+            <div class="input-groupe auth-form__input-groupe">
+                <label class="input-groupe__label" for="mail">Contact e-mail</label>
+                <input type="text" class="input-groupe__input" id="mail" name="mail">
+                <p class="input-groupe__error"></p>
+            </div>
+
+            <div class="input-groupe auth-form__input-groupe">
+                <label class="input-groupe__label" for="upload">Upload logo company</label>
+                <div class="upload-file">
+                    <p class="upload-file__name-file"></p>
+                    <input class="upload-file__input-file" type="file" id="upload">
+                    <label class="upload-file__button-label" for="upload">
+                        <img src="img/file.svg" class="upload-file__img img-responsive" alt="">
+                    </label>
+                </div>
+                <p class="input-groupe__error"></p>
+            </div>
+
+            <div class="input-groupe auth-form__input-groupe">
+                <label class="input-groupe__label" for="descroption">Company description</label>
+                <textarea class="input-groupe__input input-groupe__input--textarea_less_height" id="descroption" name="descroption"></textarea>
+                <p class="input-groupe__error"></p>
+            </div>
+            <div class="button-wrapper">
+                <button class="button-wrapper__button">Sign up</button>
+            </div>
+            
+        </form>
+        <div class="auth__copyright">
+            <p class="auth__copyright-text">©2019 Venture Box. All right recerved. <a href="#" class="auth__copyright-link">Privacy Policy</a> & <a href="#" class="auth__copyright-link">Terms of servise</a></p>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

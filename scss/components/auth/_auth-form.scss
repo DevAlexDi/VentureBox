@@ -4,6 +4,10 @@
     padding: 43px 60px;
     background: #fff;
 
+    @media (max-width: 767px) {
+        padding: 30px 20px;
+    }
+
     &__title {
         margin-bottom: 30px;
         font-size: 30px;

@@ -27,6 +27,16 @@
         &--error {
             border-color: $red;   
         }
+
+        &--textarea {
+            height: 107px;
+            resize: none;
+        }
+
+        &--textarea_less_height {
+            height: 80px;
+            resize: none;
+        }
     }
 
     &__error {
