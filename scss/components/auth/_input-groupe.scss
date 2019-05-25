@@ -46,6 +46,11 @@
         &--value-left {
             padding-left: 20px;
         }
+
+        &--value-right {
+            text-align: right;
+            padding-right: 30px;
+        }
     }
 
     &__error {
