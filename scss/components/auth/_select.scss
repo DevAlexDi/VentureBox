@@ -49,6 +49,7 @@
         left: 0;
         width: 100%;
         overflow: auto;
+        z-index: 10;
     }
 
     &__picked {
