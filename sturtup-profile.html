@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venture Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  
+</head>
+<body>
+    <!-- main--visible_sidebar добавляем при клике на кнопку "system-header__open-sidebar" делаем remove класса при клике на body-->
+    <section class="main">
+        <div class="side-bar main__side-bar">
+            <div class="side-bar__logo">
+                <img src="img/logo.svg" class="img-responsive" alt="">
+            </div>
+            <ul class="side-bar-menu">
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/dashboard.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link ">
+                        <img src="img/portfolio.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">Portfolio Management</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <!-- side-bar-menu__link--active активный пункт меню-->
+                    <a href="#" class="side-bar-menu__link side-bar-menu__link--active">
+                        <img src="img/startups-upp.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">Startups Application</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="system main__system">
+            <div class="system__content">
+                <div class="system-header">
+                    <button class="system-header__open-sidebar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="system-header__user">
+                        <div class="header-user">
+                            <div class="header-user__ava">NS</div>
+                            <div class="header-user__info">
+                                <p class="header-user__name">Name Surname</p>
+                                <p class="header-user__role">Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="system__wrapper">
+                    <!-- system__title--whith-arrow если есть стрелка и внутри кнопка-->
+                    <!-- system__title--with-button если есть черная кнопка-->
+                    <h1 class="system__title system__title--whith-arrow">
+                        <button class="system__title-arrow">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5203 25.1915L14.1825 26.5641C13.616 27.1453 12.7 27.1453 12.1396 26.5641L0.42484 14.5511C-0.141616 13.9699 -0.141616 13.0301 0.42484 12.4551L12.1396 0.435883C12.7061 -0.145294 13.622 -0.145293 14.1825 0.435883L15.5203 1.80845C16.0927 2.39581 16.0807 3.35413 15.4962 3.92913L8.23468 11.0269L25.5537 11.0269C26.3552 11.0269 27 11.6885 27 12.5108L27 14.4892C27 15.3115 26.3552 15.9731 25.5537 15.9731L8.23468 15.9731L15.4961 23.0709C16.0867 23.6459 16.0988 24.6042 15.5203 25.1915Z" fill="#303030"/>
+                            </svg>               
+                        </button>
+                        Startup profile
+                    </h1>
+                    
+                    <div class="sturtup-profile">
+                        <div class="sturtup-profile__left-side">
+                            <div class="sturtup-card sturtup-profile__sturtup-card">
+                                <div class="sturtup-card__logo">
+                                    <img src="img/sturtup.svg" class="img-responsive" alt="">
+                                </div>
+                                <p class="sturtup-card__name">Company name</p>
+                                <div class="sturtup-card__link-wr">
+                                    <a href="#" class="sturtup-card__site" target="_blank">Company website</a>
+                                </div>
+                                <div class="sturtup-card__link-wr">
+                                    <a class="sturtup-card__mail" href="mailto:Contacte-mail@gmsil.com" target="_blank">Contacte-mail@gmsil.com</a>
+                                </div>
+                                <p class="sturtup-card__info"><span>Stage of funding:</span> Pre-seed</p>
+                                <p class="sturtup-card__info"><span>Investment amount: </span> $150 000</p>
+                                <p class="sturtup-card__info"><span>Equity amount: </span> 10%</p>
+                                <div class="button-wrapper">
+                                    <button class="button-wrapper__button button-wrapper__button--border_theme button-wrapper__button--full_width button-wrapper__button--sm_height">invest</button>
+                                </div>
+                                <div class="button-wrapper button-wrapper--less_dispance">
+                                    <button class="button-wrapper__button button-wrapper__button--full_width button-wrapper__button--sm_height">Intrested in</button>
+                                </div>
+                            </div>
+                            <p class="sturtup-profile__title">Products</p>
+                            <div class="product product--without_actions sturtup-profile__product">
+                                <div class="product__image-wrapper">
+                                    <img src="img/logo-product.jpg" class="product__image img-responsive" alt="">
+                                </div>
+                                <div class="product__name-wrapper">
+                                    <a href="#" class="product__name">Product name</a>
+                                    <p class="product__price">$123 456</p>
+                                </div>
+                                <p class="product__description">Shotdescription Shotdescri p tionShot descriptionSh otdescriptio nShotdes cription Shotdescr iptionShot descriptio nShotdes cription</p>
+                                <ul class="product-tags product__tags">
+                                    <li class="product-tags__item">Tag_1</li>
+                                    <li class="product-tags__item">Tag_2</li>
+                                    <li class="product-tags__item">Tag_3</li>
+                                    <li class="product-tags__item">Tag_4</li>
+                                </ul>
+                            </div>
+                            <div class="product product--without_actions sturtup-profile__product">
+                                <div class="product__image-wrapper">
+                                    <img src="img/logo-product.jpg" class="product__image img-responsive" alt="">
+                                </div>
+                                <div class="product__name-wrapper">
+                                    <a href="#" class="product__name">Product name</a>
+                                    <p class="product__price">$123 456</p>
+                                </div>
+                                <p class="product__description">Shotdescription Shotdescri p tionShot descriptionSh otdescriptio nShotdes cription Shotdescr iptionShot descriptio nShotdes cription</p>
+                                <ul class="product-tags product__tags">
+                                    <li class="product-tags__item">Tag_1</li>
+                                    <li class="product-tags__item">Tag_2</li>
+                                    <li class="product-tags__item">Tag_3</li>
+                                    <li class="product-tags__item">Tag_4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sturtup-profile__right-side">
+                            <div class="sturtup-info sturtup-profile__sturtup-info">
+                                <p class="sturtup-info__title">Team members</p>
+                                <div class="sturtup-info__team-wrapper">
+                                    <p class="sturtup-info__team8">
+                                        <span>CEO</span> Vladislav Tkachuk
+                                    </p>
+                                    <p class="sturtup-info__team8">
+                                        <span>CEO</span> Vladislav Tkachuk
+                                    </p>
+                                    <p class="sturtup-info__team8">
+                                        <span>CEO</span> Vladislav Tkachuk
+                                    </p>
+                                    <p class="sturtup-info__team8">
+                                        <span>CEO</span> Vladislav Tkachuk
+                                    </p>
+                                </div>
+                                <p class="sturtup-info__title">Description</p>
+                                <p class="sturtup-info__text">escription description description descriptio description description description description escription description description descriptio description description description description escription description description descriptio description description description description </p>
+                            </div>
+                            <p class="sturtup-profile__title">News</p>
+                            <div class="sturtup-profile__news">
+                                <div class="my-new sturtup-profile__new">
+                                    <div class="my-new__side">
+                                        <div class="my-new__head">
+                                            <span></span>
+                                            <div class="my-new__info">
+                                                <p class="my-new__publish-day">22 may 2019</p>
+                                            </div>
+                                        </div>
+                                        <p class="my-new__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    </div>
+                                </div>
+                                <div class="my-new sturtup-profile__new">
+                                    <div class="my-new__side">
+                                        <div class="my-new__head">
+                                            <span></span>
+                                            <div class="my-new__info">
+                                                <p class="my-new__publish-day">22 may 2019</p>
+                                            </div>
+                                        </div>
+                                        <p class="my-new__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="system-copyright system__copyright">
+                <p class="system-copyright__text">©2019 Venture Box. All right recerved. <a href="#" class="system-copyright__link">Privacy policy</a> & <a href="#" class="system-copyright__link">Terms of servise</a></p>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

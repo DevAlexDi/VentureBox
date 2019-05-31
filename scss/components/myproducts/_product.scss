@@ -96,4 +96,12 @@
         margin-top: auto;
     }
     
+
+    &--without_actions {
+        padding-bottom: 5px;
+
+        .product__description {
+            margin-bottom: 13px;
+        }
+    }
 }
