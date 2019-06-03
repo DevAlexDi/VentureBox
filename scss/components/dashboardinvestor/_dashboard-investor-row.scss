@@ -1,0 +1,60 @@
+@import "layout/var";
+
+.dashboard-investor-row {
+    display: flex;
+
+    @media (max-width: 1199px) {
+        display: block;
+    }
+
+    &__left-side {
+        padding-right: 17px;
+        width: 69%;
+
+        @media (max-width: 1199px) {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    &__right-side {
+        width: 31%;
+
+        @media (max-width: 1199px) {
+            width: calc(100% + 16px);
+            position: relative;
+            display: flex;
+            left: -8px;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            left: 0;
+            display: block;
+        }
+    }
+
+    &__right-side-item {
+        @media (max-width: 1199px) {
+            width: 33.33%;
+            padding: 0 8px;
+            display: flex;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 0;
+            display: block;
+        }
+    }
+
+    &__md-height {
+        @media (max-width: 1199px) {
+            width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            height: auto;
+        }
+    }
+}
