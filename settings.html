@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venture Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  
+</head>
+<body>
+    <!-- main--visible_sidebar добавляем при клике на кнопку "system-header__open-sidebar" делаем remove класса при клике на body-->
+    <section class="main">
+        <div class="side-bar main__side-bar">
+            <div class="side-bar__logo">
+                <img src="img/logo.svg" class="img-responsive" alt="">
+            </div>
+            <ul class="side-bar-menu">
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/dashboard.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <!-- side-bar-menu__link--active активный пункт меню-->
+                    <a href="#" class="side-bar-menu__link side-bar-menu__link--active">
+                        <img src="img/my-products.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">My products</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/my-investers.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">My investers</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/crm.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">CRM</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/my-news.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">My news</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/my-milestones.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">My milestones</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="system main__system">
+            <div class="system__content">
+                <div class="system-header">
+                    <button class="system-header__open-sidebar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="system-header__user">
+                        <div class="header-user">
+                            <div class="header-user__ava">NS</div>
+                            <div class="header-user__info">
+                                <p class="header-user__name">Name Surname</p>
+                                <p class="header-user__role">Startup</p>
+                            </div>
+                        </div>
+                        <ul class="system-header__dropdown">
+                            <li class="system-header__dropdown-item">
+                                <a href="#" class="system-header__dropdown-link">Settings</a>
+                            </li>
+                            <li class="system-header__dropdown-item">
+                                <button class="system-header__dropdown-link">Log out</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="system__wrapper">
+                    <!-- system__title--whith-arrow если есть стрелка и внутри кнопка-->
+                    <!-- system__title--with-button если есть черная кнопка-->
+                    <h1 class="system__title ">
+                        Settings
+                    </h1>
+                    <div class="settings">
+                        <div class="settings__collumn">
+                            <form class="settings-item settings__item">
+                                <div class="settings-item__top">
+                                    <p class="settings-item__title">General</p>
+                                    <div class="input-groupe settings-item__input-groupe">
+                                        <label class="input-groupe__label" for="name">Name</label>
+                                        <!-- input-groupe__input--error класс ошибки для инпута-->
+                                        <input type="text" class="input-groupe__input" id="name" name="name">
+                                        <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+                                    </div>
+                                    <div class="input-groupe settings-item__input-groupe">
+                                        <label class="input-groupe__label" for="surname">Surname</label>
+                                        <!-- input-groupe__input--error класс ошибки для инпута-->
+                                        <input type="text" class="input-groupe__input" id="surname" name="surname">
+                                        <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+                                    </div>
+                                    <div class="one-checkbox settings-item__check-box">
+                                        <div class="one-checkbox__check-style">
+                                            <input type="checkbox" class="one-checkbox__checkbox" name="notification" id="notification">
+                                            <label for="notification"></label>
+                                        </div>
+                                        <p class="one-checkbox__label">To turn check box email notification</p>
+                                    </div>
+                                </div>
+                                <div class="settings-item__bott">
+                                    <p class="settings-item__success-text"><!--сюда текст, если все хорошо--></p>
+                                    <div class="button-wrapper">
+                                        <button class="button-wrapper__button">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="settings__collumn">
+                            <form class="settings-item settings__item">
+                                <div class="settings-item__top">
+                                    <p class="settings-item__title">Email</p>
+                                    <div class="input-groupe settings-item__input-groupe">
+                                        <label class="input-groupe__label" for="current-mail">Current E-mail</label>
+                                        <!-- input-groupe__input--error класс ошибки для инпута-->
+                                        <input type="text" class="input-groupe__input" id="current-mail" name="current-mail">
+                                        <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+                                    </div>
+                                    <div class="input-groupe settings-item__input-groupe">
+                                        <label class="input-groupe__label" for="new-email">New email</label>
+                                        <!-- input-groupe__input--error класс ошибки для инпута-->
+                                        <input type="text" class="input-groupe__input" id="new-email" name="new-email">
+                                        <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+                                    </div>
+                                    <div class="input-groupe settings-item__input-groupe">
+                                        <label class="input-groupe__label" for="current-password">Current password</label>
+                                        <!-- input-groupe__input--error класс ошибки для инпута-->
+                                        <input type="password" class="input-groupe__input" id="current-password" name="current-password">
+                                        <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="settings-item__bott">
+                                    <p class="settings-item__success-text"><!--сюда текст, если если сохранилось--></p>
+                                    <div class="button-wrapper">
+                                        <button class="button-wrapper__button">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="settings__collumn">
+                            <form class="settings-item settings__item">
+                                <div class="settings-item__top">
+                                    <p class="settings-item__title">Passward</p>
+                                    <div class="input-groupe settings-item__input-groupe">
+                                        <label class="input-groupe__label" for="change-pass-1">Current password</label>
+                                        <!-- input-groupe__input--error класс ошибки для инпута-->
+                                        <input type="password" class="input-groupe__input" id="change-pass-1" name="change-pass-1">
+                                        <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+                                    </div>
+                                    <div class="input-groupe settings-item__input-groupe">
+                                        <label class="input-groupe__label" for="change-pass-2">New password</label>
+                                        <!-- input-groupe__input--error класс ошибки для инпута-->
+                                        <input type="password" class="input-groupe__input" id="change-pass-2" name="change-pass-2">
+                                        <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+                                    </div>
+                                    <div class="input-groupe settings-item__input-groupe">
+                                        <label class="input-groupe__label" for="change-pass-3">Confirm pasword</label>
+                                        <!-- input-groupe__input--error класс ошибки для инпута-->
+                                        <input type="password" class="input-groupe__input" id="change-pass-3" name="change-pass-3">
+                                        <p class="input-groupe__error"><!--сюда текст ошибки если есть--></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="settings-item__bott">
+                                    <p class="settings-item__success-text"><!--сюда текст, если если сохранилось--></p>
+                                    <div class="button-wrapper">
+                                        <button class="button-wrapper__button">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="system-copyright system__copyright">
+                <p class="system-copyright__text">©2019 Venture Box. All right recerved. <a href="#" class="system-copyright__link">Privacy policy</a> & <a href="#" class="system-copyright__link">Terms of servise</a></p>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
