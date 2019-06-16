@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venture Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  
+</head>
+<body>
+    <!-- main--visible_sidebar добавляем при клике на кнопку "system-header__open-sidebar" делаем remove класса при клике на body-->
+    <section class="main">
+        <div class="side-bar main__side-bar">
+            <div class="side-bar__logo">
+                <img src="img/logo.svg" class="img-responsive" alt="">
+            </div>
+            <ul class="side-bar-menu">
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/marketplace.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">Marketplace</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="system main__system">
+            <div class="system__content">
+                <div class="system-header">
+                    <button class="system-header__open-sidebar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="system-header__no-auth">
+                        <a href="#" class="system-header__auth-link">Log in</a>
+                    </div>
+                </div>
+                <div class="system__wrapper">
+                    <!-- system__title--whith-arrow если есть стрелка и внутри кнопка-->
+                    <!-- system__title--with-button если есть черная кнопка-->
+                 
+                    <form class="form-filter">
+                        <div class="form-filter__flex-groupe">
+                            <div class="input-groupe form-filter__search-from-name">
+                                <!-- input-groupe__input--error класс ошибки для инпута-->
+                                <div class="input-groupe__with-sm-butt">
+                                    <input type="text" class="input-groupe__input" name="name" placeholder="Search">
+                                    <button class="input-groupe__sm-butt input-groupe__sm-butt--sentered_inside">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.2857 12.5714H13.3714L13.0286 12.2286C14.1715 10.9714 14.8572 9.25714 14.8572 7.42857C14.8571 3.31429 11.5429 0 7.42857 0C3.31429 0 0 3.31429 0 7.42857C0 11.5429 3.31429 14.8571 7.42857 14.8571C9.25714 14.8571 10.9714 14.1714 12.2286 13.0286L12.5714 13.3714V14.2857L18.2857 20L20 18.2857L14.2857 12.5714ZM7.42857 12.5714C4.57143 12.5714 2.28571 10.2857 2.28571 7.42857C2.28571 4.57143 4.57143 2.28571 7.42857 2.28571C10.2857 2.28571 12.5714 4.57143 12.5714 7.42857C12.5714 10.2857 10.2857 12.5714 7.42857 12.5714Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="form-filter__on-show-checkbox">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.1231 0H1.87723C0.211679 0 -0.628673 2.02074 0.551405 3.20082L6.875 9.52663V16.25C6.875 16.8401 7.15285 17.3959 7.625 17.8125L10.125 19.651C11.3466 20.5047 13.125 19.7111 13.125 18.151V9.52663L19.4489 3.20082C20.6266 2.02312 19.792 0 18.1231 0ZM11.25 8.74999V18.125L8.75 16.25V8.74999L1.875 1.875H18.125L11.25 8.74999Z" fill="white"/>
+                                </svg>  
+                            </button>
+                        </div>
+                        <!--ngIf-->
+                        <div class="form-filter__checkboxes">
+                            <div class="marketplace-checkboxes">
+                                <div class="one-checkbox marketplace-checkboxes__check-box">
+                                    <div class="one-checkbox__check-style">
+                                        <input type="checkbox" class="one-checkbox__checkbox" name="role" id="checkbox-1">
+                                        <label for="checkbox-1"></label>
+                                    </div>
+                                    <p class="one-checkbox__label">Category</p>
+                                </div>
+                                <div class="one-checkbox marketplace-checkboxes__check-box">
+                                    <div class="one-checkbox__check-style">
+                                        <input type="checkbox" class="one-checkbox__checkbox" name="role" id="checkbox-2">
+                                        <label for="checkbox-2"></label>
+                                    </div>
+                                    <p class="one-checkbox__label">Category</p>
+                                </div>
+                                <div class="one-checkbox marketplace-checkboxes__check-box">
+                                    <div class="one-checkbox__check-style">
+                                        <input type="checkbox" class="one-checkbox__checkbox" name="role" id="checkbox-3">
+                                        <label for="checkbox-3"></label>
+                                    </div>
+                                    <p class="one-checkbox__label">Category</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                 
+                    
+                    <div class="my-products marketplace-products">
+                        <div class="my-products__item">
+                            <div class="product product--without_actions marketplace-products__product">
+                                <div class="product__image-wrapper">
+                                    <img src="img/logo-product.jpg" class="product__image img-responsive" alt="">
+                                </div>
+                                <div class="product__name-wrapper">
+                                    <a href="#" class="product__name">Product name</a>
+                                    <p class="product__price">$123 456</p>
+                                </div>
+                                <p class="product__description">Shotdescription Shotdescri p tionShot descriptionSh otdescriptio nShotdes cription Shotdescr iptionShot descriptio nShotdes cription</p>
+                                <ul class="product-tags product__tags product-tags--top_distance">
+                                    <li class="product-tags__item">Tag_1</li>
+                                    <li class="product-tags__item">Tag_2</li>
+                                    <li class="product-tags__item">Tag_3</li>
+                                    <li class="product-tags__item">Tag_4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="my-products__item">
+                            <div class="product product--without_actions marketplace-products__product">
+                                <div class="product__image-wrapper">
+                                    <img src="img/logo-product.jpg" class="product__image img-responsive" alt="">
+                                </div>
+                                <div class="product__name-wrapper">
+                                    <a href="#" class="product__name">Product name</a>
+                                    <p class="product__price">$123 456</p>
+                                </div>
+                                <p class="product__description">Shotdescription Shotdescri p tionShot descriptionSh otdescriptio nShotdes cription Shotdescr iptionShot descriptio nShotdes cription</p>
+                                <ul class="product-tags product__tags product-tags--top_distance">
+                                    <li class="product-tags__item">Tag_1</li>
+                                    <li class="product-tags__item">Tag_2</li>
+                                    <li class="product-tags__item">Tag_3</li>
+                                    <li class="product-tags__item">Tag_4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="my-products__item">
+                            <div class="product product--without_actions marketplace-products__product">
+                                <div class="product__image-wrapper">
+                                    <img src="img/logo-product.jpg" class="product__image img-responsive" alt="">
+                                </div>
+                                <div class="product__name-wrapper">
+                                    <a href="#" class="product__name">Product name</a>
+                                    <p class="product__price">$123 456</p>
+                                </div>
+                                <p class="product__description">Shotdescription Shotdescri p tionShot</p>
+                                <ul class="product-tags product__tags product-tags--top_distance">
+                                    <li class="product-tags__item">Tag_1</li>
+                                    <li class="product-tags__item">Tag_2</li>
+                                    <li class="product-tags__item">Tag_3</li>
+                                    <li class="product-tags__item">Tag_4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="system-copyright system__copyright">
+                <p class="system-copyright__text">©2019 Venture Box. All right recerved. <a href="#" class="system-copyright__link">Privacy policy</a> & <a href="#" class="system-copyright__link">Terms of servise</a></p>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
