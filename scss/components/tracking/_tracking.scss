@@ -63,10 +63,7 @@
             }
         }
 
-        &--today {
-            background: rgba(101, 154, 255, 0.1);
-        }
-
+        
         &--checked {
             background: #fff;
 
@@ -77,7 +74,11 @@
             .tracking-item__info {
                color: #000;
             }
-        }    
+        }
+        &--today {
+            background: rgba(101, 154, 255, 0.1);
+        }
+
     }
 
 
@@ -129,7 +130,7 @@
         border: 1px solid $black;
         width: 18px;
         height: 18px;
-        background: #fff;
+        background-color: transparent;
         padding: 0;
         background-repeat: no-repeat;
         background-position: center;
