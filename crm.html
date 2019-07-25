@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venture Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  
+</head>
+<body>
+    <!-- main--visible_sidebar добавляем при клике на кнопку "system-header__open-sidebar" делаем remove класса при клике на body-->
+    <section class="main">
+        <div class="side-bar main__side-bar">
+            <div class="side-bar__logo">
+                <img src="img/logo.svg" class="img-responsive" alt="">
+            </div>
+            <ul class="side-bar-menu">
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/dashboard.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <!-- side-bar-menu__link--active активный пункт меню-->
+                    <a href="#" class="side-bar-menu__link side-bar-menu__link--active">
+                        <img src="img/my-products.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">My products</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/my-investers.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">My investers</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/crm.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">CRM</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/my-news.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">My news</span>
+                    </a>
+                </li>
+                <li class="side-bar-menu__item">
+                    <a href="#" class="side-bar-menu__link">
+                        <img src="img/my-milestones.svg" class="side-bar-menu__icon img-responsive" alt="">
+                        <span class="side-bar-menu__text">My milestones</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="system main__system">
+            <div class="system__content">
+                <div class="system-header">
+                    <button class="system-header__open-sidebar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="system-header__user">
+                        <div class="header-user">
+                            <div class="header-user__ava">NS</div>
+                            <div class="header-user__info">
+                                <p class="header-user__name">Name Surname</p>
+                                <p class="header-user__role">Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="system__wrapper">
+                    <!-- system__title--whith-arrow если есть стрелка и внутри кнопка-->
+                    <!-- system__title--with-button если есть черная кнопка-->
+                    <h1 class="system__title">
+                        CRM
+                    </h1>
+                    <p>Enter the login and password specified at registration!</p>
+                    
+                </div>
+            </div>
+            <div class="system-copyright system__copyright">
+                <p class="system-copyright__text">©2019 Venture Box. All right recerved. <a href="#" class="system-copyright__link">Privacy policy</a> & <a href="#" class="system-copyright__link">Terms of servise</a></p>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
